@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "types": [
-      "nativewind/types"
+      "nativewind/types",
+      "node"
     ]
   },
-  "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base",
+  "paths": {    
+    "@env": [
+      ".env"
+    ]
+} 
 }
